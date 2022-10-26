@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
-border:0;
+border:0; 
 font:inherit;
 font-size:100%;
 margin:0;
@@ -42,7 +42,7 @@ p {
 }
 .mainDetails {
 	padding: 25px 35px;
-	border-bottom: 4px solid #fab11e;
+	border-bottom: 4px solid #fdb526;
 	background: #ededed;
 }
 
