@@ -136,5 +136,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 if os.environ.get('ENVIRONMENT') != 'production':
     from .local_settings import * 
 # DON'T PUT ANYTHING BELOW THIS
-# Configure Django App for Heroku.
 
+# Configure Django App for Heroku.
+import django_on_heroku   
+django_on_heroku.settings(locals())
