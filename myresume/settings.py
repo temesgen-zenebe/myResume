@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-c3y0-c#m+z=u6$mcn8cu005a4v!$rr)p$5sv^$)m=jtvfz$j56
 DEBUG = False
 
 
-ALLOWED_HOSTS = ['temesgen-portfolio-website.herokuapp.com']
+ALLOWED_HOSTS = ['temesgen-portfolio-website.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -119,6 +119,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+# Local Static File Settings
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 #STATIC_URL
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static') 
 STATIC_URL = '/static/'
@@ -133,10 +135,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # BOTTOM OF settings.py
-if os.environ.get('ENVIRONMENT') != 'production':
-    from .local_settings import * 
-# DON'T PUT ANYTHING BELOW THIS
 
 # Configure Django App for Heroku.
-import django_on_heroku   
+import django_on_heroku    
 django_on_heroku.settings(locals())
